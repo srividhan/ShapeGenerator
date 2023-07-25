@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <center>
+        <div class="main">
+            <div class="main1">
+                <div class="shape">
+                    <h1 style="margin-top: 0%;color: rgb(5, 151, 248);">Shape Generator</h1>
+                    <label for="no" style="color: rgb(216, 80, 80);">No.of.Shapes : </label>
+                    <input type="number" name="number" id="no"><br><br>
+                    <label for="selShape" style="color: rgb(216, 80, 80);">Pick a Shape : </label>
+                    <select name="selShape" id="selShape">
+                        <option value="square">Square</option>
+                        <option value="circle">Circle</option>
+                        <option value="rectangle">Rectangle</option>
+                    </select><br><br>
+                    <label for="selcolor" style="color: rgb(216, 80, 80);">Pick a Color : </label>
+                    <input type="color" name="selcolor" id="selcolor"><br><br>
+                    <button onclick="generate()" style="background-color: rgb(255, 230, 0);color: balck;border-radius: 10px;">Generate Shapes!</button>
+                </div>
+            </div>
+            <div class="main2" id="main2">
+            </div>
+        </div>
+    </center>
+    <script src="./script.js"></script>
+</body>
+</html>
